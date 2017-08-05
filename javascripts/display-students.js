@@ -12,7 +12,7 @@ var hello = (function(taco){
     //called 'display' which is a function
     //to parse the JSON returned from our xhr
     //and put it on the DOM
-    taco.display = function() {
+    taco.displayStudents = function() {
 
         //store the student data (an array of objects)
         //'this' here means our xhr call
