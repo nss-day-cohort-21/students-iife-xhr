@@ -7,4 +7,4 @@ const studentsDiv = document.querySelector("#students");
 //defined, in xhr.js, it takes two arguments:
 //a url to call to 
 //and a function to be executed on load.
-hello.getJson('../students.json', hello.display);
+hello.getJson('../students.json', hello.displayStudents);
