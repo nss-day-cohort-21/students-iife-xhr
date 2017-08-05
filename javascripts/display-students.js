@@ -15,6 +15,7 @@ var hello = (function(taco){
     taco.display = function() {
 
         //store the student data (an array of objects)
+        //'this' here means our xhr call
         let students = JSON.parse(this.responseText);
 
             //iterate over the students array and
