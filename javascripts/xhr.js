@@ -17,12 +17,12 @@ var hello = (function(taco){
         //create a request object
         let xhr = new XMLHttpRequest();
 
-        //listen for load and error event on that object
+        //listen for load and error event on our xhr object
         //when 'load' happens, invoke the callback function we passed
         xhr.addEventListener("load", callback);
         xhr.addEventListener("error", (error) => console.log(error));
 
-        //open takes and 'http' verb and a url
+        //open takes an 'http verb' and a url
         //which we passed when we called this in main.js
         xhr.open('GET', url);
         xhr.send();
@@ -30,7 +30,7 @@ var hello = (function(taco){
         
     } 
 
-    //return the object passsed 
+    //return the object passsed ('taco' will be 'hello' when we actually invoke)
     //with it's cool new method attached
     return taco;
 
